@@ -25,10 +25,10 @@ This lesson develops a rigorous understanding of Rust’s concurrency model and 
 - OS scheduling strategies (preemptive, cooperative)
 - CPU cores and the limits of true parallelism
 - Data races and memory safety
+
+### Topic 3.1.2: Rust Concurrency
+
 - Ownership and borrowing rules in concurrent contexts
-
-### Topic 3.1.2: Send, Sync & Concurrency Models
-
 - Marker traits: what they are and why they exist
 - `Send` trait: safe ownership transfer across threads
 - `Sync` trait: safe shared reference access across threads
