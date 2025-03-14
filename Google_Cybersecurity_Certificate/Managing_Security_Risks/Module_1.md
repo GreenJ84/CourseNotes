@@ -1,58 +1,71 @@
-# **Manage Security Risks**
+# **Security Domains**
 
-## **Security Domains**
+## **Module Overview**
+
+Welcome to the Security Domains module of this course! In this section, you'll gain an understanding of the CISSP's eight security domains, which are essential for securing organizations from threats, risks, and vulnerabilities. Additionally, we'll explore the National Institute of Standards and Technology’s (NIST) Risk Management Framework (RMF) and the steps of risk management to ensure business operations are protected.
+
+### **Learning Objectives**
+
+By the end of this module, you will be able to:
+
+- Recognize and explain the focus of CISSP's eight security domains.
+- Identify and define the primary threats, risks, and vulnerabilities to business operations.
+- Describe the threats, risks, and vulnerabilities that entry-level security analysts are most focused on.
+- Determine how threats, risks, and vulnerabilities impact business operations.
+- Identify the steps of risk management.
+
+This module will focus on security frameworks and controls, with a particular emphasis on NIST's RMF, delve into security audits and discuss some basic security tools that help protect assets and data from various risks.
+
+
+## **8 CISSP Security Domains**
 
 The eight security domains identified by the Certified Information Systems Security Professional (CISSP) help organizations structure security operations, manage risks, and establish a strong security posture. This module covers the key areas of these domains and their relevance to cybersecurity.
 
-### **Security Domains Overview**
-
-#### **8 CISSP Security Domains**
-
-##### **1. Security and Risk Management**
+### **1. Security and Risk Management**
 
 - Defines security goals and objectives to reduce risks to critical assets and data.
 - Covers risk mitigation, compliance, business continuity, and legal regulations.
 - Establishes policies for ethical security practices to minimize negligence and fraud.
 - Encompasses **Information Security (InfoSec)** strategies such as incident response, vulnerability management, and application security.
 
-##### **2. Asset Security**
+### **2. Asset Security**
 
 - Focuses on securing digital and physical assets.
 - Manages storage, maintenance, retention, and destruction of data.
 - Ensures proper handling of sensitive data such as PII and SPII.
 - Implements secure data disposal practices, including proper hard drive destruction.
 
-##### **3. Security Architecture and Engineering**
+### **3. Security Architecture and Engineering**
 
 - Ensures the use of effective tools, systems, and processes for data security.
 - Promotes **shared responsibility** where all individuals contribute to security.
 - Incorporates security design principles such as **least privilege**, **defense in depth**, and **zero trust**.
 
-##### **4. Communication and Network Security**
+### **4. Communication and Network Security**
 
 - Manages and secures physical networks and wireless communications.
 - Protects data across on-site, remote, and cloud environments.
 - Mitigates risks associated with insecure connections like public Wi-Fi and Bluetooth.
 
-##### **5. Identity and Access Management (IAM)**
+### **5. Identity and Access Management (IAM)**
 
 - Controls user access through identification, authentication, authorization, and accountability.
 - Implements **least privilege** principles to minimize risk.
 - Uses authentication methods such as biometrics and multi-factor authentication (MFA).
 
-##### **6. Security Assessment and Testing**
+### **6. Security Assessment and Testing**
 
 - Conducts security control testing to identify risks and vulnerabilities.
 - Implements security audits and penetration testing.
 - Evaluates security measures through **security assessment reports**.
 
-##### **7. Security Operations**
+### **7. Security Operations**
 
 - Focuses on threat investigation and incident response.
 - Uses forensic analysis to determine causes of security incidents.
 - Implements **SIEM tools**, intrusion detection, log management, and playbooks for structured responses.
 
-##### **8. Software Development Security**
+### **8. Software Development Security**
 
 - Integrates security into the **Software Development Life Cycle (SDLC)**.
 - Ensures secure coding practices, penetration testing, and encryption methods.

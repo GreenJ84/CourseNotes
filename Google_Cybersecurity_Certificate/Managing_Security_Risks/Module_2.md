@@ -1,20 +1,22 @@
-# **Module 2: Security Frameworks and Controls**
+# **Security Frameworks and Controls**
 
-## **Introduction**
+## **Module Overview**
 
 As a security analyst, your role extends beyond protecting organizations—you also help safeguard individuals from financial and reputational harm. Security breaches affecting customers, vendors, and employees can have severe consequences. Your work is essential in maintaining the confidentiality and integrity of sensitive data.
 
-In this module, we will explore security frameworks, controls, and design principles in greater depth. We will also discuss how these elements apply to security audits, ensuring organizations and individuals remain protected against threats and vulnerabilities.
+This module will explore security frameworks, controls, and design principles in greater depth. It will also cover how these elements apply to security audits, ensuring organizations and individuals remain protected against threats and vulnerabilities.
 
 A key component of security frameworks is the **NIST Cybersecurity Framework (CSF)**, which plays a crucial role in safeguarding customer tools and personal work devices through the implementation of security controls.
 
-### **What to Expect in This Module**
+### **Learning Objectives**
 
-- Understanding security frameworks and their role in cybersecurity.
-- Exploring security controls and their application in protecting assets.
-- Learning about security design principles that guide risk mitigation.
-- Applying these frameworks and controls in security audits.
-
+- Define and describe the purpose of security frameworks and controls.
+- Describe the CIA triad.
+- Explain the National Institute of Standards and Technology (NIST) frameworks.
+- Identify security principles.
+- Examine how businesses use security frameworks and controls to protect business operations.
+- Define security audits.
+- Explore common elements of internal security audits
 
 ## **Frameworks and Controls**
 
@@ -44,7 +46,7 @@ Security controls are measures implemented to reduce specific security risks. Th
   - Authorization mechanisms
   - Asset classification
 
-## **The CIA Triad: Confidentiality, Integrity, Availability**/sdeswa.sd./xçxze
+## **The CIA Triad: Confidentiality, Integrity, Availability**
 
 ### **CIA Overview**
 
