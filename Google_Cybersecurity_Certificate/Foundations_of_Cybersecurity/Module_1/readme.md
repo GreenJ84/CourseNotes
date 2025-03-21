@@ -1,5 +1,5 @@
 # Google Cybersecurity Certificate
-
+<!-- TODO: Extract Introduction Content -->
 ## Certificate Program Progress
 
 The Google Cybersecurity Certificate consists of 8 courses:
