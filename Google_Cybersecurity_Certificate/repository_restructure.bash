@@ -9,12 +9,6 @@
 # This script is not idempotent, so be careful when running it multiple times.
 # This script is not tested on all courses, so be careful when running it on other courses.
 
-# Check if the script is running as root
-if [[ $EUID -ne 0 ]]; then
-  echo "This script must be run as root."
-  exit 1
-fi
-
 # Loop through each course directory
 for course_dir in ./*; do
   # Check if the course directory is a directory
