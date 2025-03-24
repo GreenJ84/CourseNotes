@@ -38,4 +38,4 @@ Graduates of the [Google Cybersecurity Certificate](https://www.coursera.org/pro
 - Interview Warmup for practice questions and AI-generated insights
 - Career Circle for one-on-one career coaching (U.S. eligibility required)
 - A Google Cybersecurity Certificate badge to share on LinkedIn
-- Preparation for the CompTIA Security+ exam, earning a dual credential
+- Preparation for the CompTIA Security+ exam, earning a dual credential (unlock a **30% discount**)
