@@ -1,10 +1,8 @@
 # **Security Domains**
 
-## **Module Overview**
-
 Welcome to the Security Domains module of this course! In this section, you'll gain an understanding of the CISSP's eight security domains, which are essential for securing organizations from threats, risks, and vulnerabilities. Additionally, we'll explore the National Institute of Standards and Technology’s (NIST) Risk Management Framework (RMF) and the steps of risk management to ensure business operations are protected.
 
-### **Learning Objectives**
+## **Learning Objectives**
 
 By the end of this module, you will be able to:
 
@@ -21,51 +19,51 @@ This module will focus on security frameworks and controls, with a particular em
 
 The eight security domains identified by the Certified Information Systems Security Professional (CISSP) help organizations structure security operations, manage risks, and establish a strong security posture. This module covers the key areas of these domains and their relevance to cybersecurity.
 
-### **1. Security and Risk Management**
+### 1. Security and Risk Management
 
 - Defines security goals and objectives to reduce risks to critical assets and data.
 - Covers risk mitigation, compliance, business continuity, and legal regulations.
 - Establishes policies for ethical security practices to minimize negligence and fraud.
 - Encompasses **Information Security (InfoSec)** strategies such as incident response, vulnerability management, and application security.
 
-### **2. Asset Security**
+### 2. Asset Security
 
 - Focuses on securing digital and physical assets.
 - Manages storage, maintenance, retention, and destruction of data.
 - Ensures proper handling of sensitive data such as PII and SPII.
 - Implements secure data disposal practices, including proper hard drive destruction.
 
-### **3. Security Architecture and Engineering**
+### 3. Security Architecture and Engineering
 
 - Ensures the use of effective tools, systems, and processes for data security.
 - Promotes **shared responsibility** where all individuals contribute to security.
 - Incorporates security design principles such as **least privilege**, **defense in depth**, and **zero trust**.
 
-### **4. Communication and Network Security**
+### 4. Communication and Network Security
 
 - Manages and secures physical networks and wireless communications.
 - Protects data across on-site, remote, and cloud environments.
 - Mitigates risks associated with insecure connections like public Wi-Fi and Bluetooth.
 
-### **5. Identity and Access Management (IAM)**
+### 5. Identity and Access Management (IAM)
 
 - Controls user access through identification, authentication, authorization, and accountability.
 - Implements **least privilege** principles to minimize risk.
 - Uses authentication methods such as biometrics and multi-factor authentication (MFA).
 
-### **6. Security Assessment and Testing**
+### 6. Security Assessment and Testing
 
 - Conducts security control testing to identify risks and vulnerabilities.
 - Implements security audits and penetration testing.
 - Evaluates security measures through **security assessment reports**.
 
-### **7. Security Operations**
+### 7. Security Operations
 
 - Focuses on threat investigation and incident response.
 - Uses forensic analysis to determine causes of security incidents.
 - Implements **SIEM tools**, intrusion detection, log management, and playbooks for structured responses.
 
-### **8. Software Development Security**
+### 8. Software Development Security
 
 - Integrates security into the **Software Development Life Cycle (SDLC)**.
 - Ensures secure coding practices, penetration testing, and encryption methods.
@@ -75,7 +73,7 @@ The eight security domains identified by the Certified Information Systems Secur
 
 Organizations must protect both digital and physical assets from threats, risks, and vulnerabilities. Assets include PII, intellectual property, IT infrastructure, and physical resources like payment kiosks and office spaces.
 
-### **Risk Management Strategies**
+### Risk Management Strategies
 
 Organizations implement various strategies to manage risks:
 
@@ -86,9 +84,9 @@ Organizations implement various strategies to manage risks:
 
 Frameworks such as the **NIST Risk Management Framework (RMF)** and **HITRUST** help organizations develop policies and processes for risk management.
 
-### **Understanding Threats, Risks, and Vulnerabilities**
+### Understanding Threats, Risks, anVulnerabilities**
 
-### **Threats**
+#### Threats
 
 - **Threat:** Any event or action that could negatively impact assets.
 - Common threats include:
@@ -97,7 +95,7 @@ Frameworks such as the **NIST Risk Management Framework (RMF)** and **HITRUST** 
   - **Social engineering attacks:** Manipulating people to disclose confidential information.
     - **Phishing:** Fraudulent emails designed to steal credentials.
 
-### **Risks**
+#### Risks
 
 - **Risk:** The likelihood of a threat exploiting a vulnerability.
 - Factors affecting risk levels:
@@ -107,7 +105,7 @@ Frameworks such as the **NIST Risk Management Framework (RMF)** and **HITRUST** 
   - **Multiparty risk:** Third-party vendors with access to sensitive data.
   - **Non-compliance:** Failing to update software or apply security patches.
 
-### **Vulnerabilities**
+#### Vulnerabilities
 
 - **Vulnerability:** A weakness that can be exploited by a threat.
 - Common vulnerabilities include:
@@ -118,9 +116,9 @@ Frameworks such as the **NIST Risk Management Framework (RMF)** and **HITRUST** 
   - **Unpatched systems:** Security flaws that remain unaddressed.
   - **Weak access controls:** Insufficient monitoring and logging.
 
-### **Impact of Threats, Risks, and Vulnerabilities on Business Operations**
+### Impact of Threats, Risks, and Vulnerabilities oBusiness Operations**
 
-### **1. Ransomware Attacks**
+#### 1. Ransomware Attacks
 
 - **Ransomware:** Malicious software that encrypts data and demands payment for decryption.
 - Consequences:
@@ -128,18 +126,18 @@ Frameworks such as the **NIST Risk Management Framework (RMF)** and **HITRUST** 
   - Prevents access to critical systems.
   - Can lead to leaked data on the **dark web**.
 
-### **2. Financial Impact**
+#### 2. Financial Impact
 
 - Security incidents cause financial losses due to:
   - **Operational downtime.**
   - **Legal penalties for non-compliance.**
   - **Mitigation and recovery costs.**
 
-### **3. Identity Theft**
+#### 3. Identity Theft
 
 - Stolen PII and SPII can be sold on the **dark web**, leading to legal and financial repercussions.
 
-### **4. Reputation Damage**
+#### 4. Reputation Damage
 
 - Breaches affect customer trust and market position.
 - Organizations may face regulatory scrutiny and loss of business.
@@ -148,37 +146,37 @@ Frameworks such as the **NIST Risk Management Framework (RMF)** and **HITRUST** 
 
 The **NIST RMF** outlines structured steps for risk management.
 
-### **1. Prepare**
+### 1. Prepare
 
 - Identifies security and privacy risks before incidents occur.
 - Analysts monitor threats and suggest preventive measures.
 
-### **2. Categorize**
+### 2. Categorize
 
 - Defines risk management processes based on **confidentiality, integrity, and availability (CIA)** principles.
 - Analysts assess risks to critical assets like customer data.
 
-### **3. Select**
+### 3. Select
 
 - Organizations choose and document security controls.
 - Analysts maintain **playbooks and compliance records**.
 
-### **4. Implement**
+### 4. Implement
 
 - Security controls are deployed to mitigate risks.
 - Example: Strengthening password policies to prevent unauthorized access.
 
-### **5. Assess**
+### 5. Assess
 
 - Evaluates the effectiveness of security controls.
 - Analysts identify weaknesses and recommend improvements.
 
-### **6. Authorize**
+### 6. Authorize
 
 - Organizations formally accept responsibility for security measures.
 - Analysts assist with **reporting and risk documentation**.
 
-### **7. Monitor**
+### 7. Monitor
 
 - Continuous assessment of security effectiveness.
 - Analysts track security events and ensure compliance.
