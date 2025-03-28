@@ -1,10 +1,8 @@
-# **Managing Security Risks - Introduction**
-
-## **Course Overview**
+# **Managing Security Risks**
 
 This course covers key security principles, including the eight security domains of the Certified Information Systems Security Professional (CISSP), primary threats, risks, and vulnerabilities to business operations, and the National Institute of Standards and Technology’s (NIST) Risk Management Framework (RMF). You will also learn about security audits, SIEM tools, and playbooks for incident response.
 
-## **Course Structure**
+## **Course Modules**
 
 ### **Module 1: Security Domains**
 
