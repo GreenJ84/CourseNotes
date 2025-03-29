@@ -4,15 +4,13 @@
 
 In this module, you will explore industry-leading **Security Information and Event Management (SIEM)** tools that security professionals use to **protect business operations**. You’ll learn how **entry-level security analysts** interact with SIEM dashboards in their daily work.
 
-### **Learning Objectives**
+## **Learning Objectives**
 
 By the end of this module, you will be able to:
 
 - **Identify and define** commonly used SIEM tools.
 - **Describe** how SIEM tools protect business operations.
 - **Explain** how entry-level security analysts utilize SIEM dashboards.
-
----
 
 ## **SIEM Dashboards Overview**
 
@@ -58,9 +56,6 @@ SIEM tools are evolving to accommodate new technologies, especially cloud-hosted
 - **Cloud-hosted** SIEM tools: Managed by vendors, ideal for organizations without infrastructure maintenance needs.
 - **Cloud-native** SIEM tools: Designed for scalability, flexibility, and availability in cloud environments.
 - **Automation**: The future will see more automated responses to common security incidents through **Security Orchestration, Automation, and Response (SOAR)**. This will reduce the need for manual intervention, allowing analysts to focus on complex incidents.
-  
-
-
 
 ## **SIEM Tools**
 
