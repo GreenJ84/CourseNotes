@@ -1,17 +1,17 @@
-# Use Playbooks to Respond to Incidents
+# **Use Playbooks to Respond to Incidents**
+
+Welcome to the final module of the course.
 
 ## **Module Overview**
 
-Welcome to the final module of the course. In this module, we’ll explore **playbooks** and how they help security teams respond to threats, risks, and vulnerabilities identified by SIEM tools.
+ In this module, we’ll explore **playbooks** and how they help security teams respond to threats, risks, and vulnerabilities identified by SIEM tools. We’ll also cover the **six phases of incident response**.
 
-We’ll also cover the **six phases of incident response**.
-
-### Learning Objectives
+## **Learning Objectives**
 
 - Define and describe the purpose of a playbook.
 - Use a playbook to respond to identified threats, risks, or vulnerabilities.
 
-## Security Playbooks
+## **Security Playbooks**
 
 Previously, we discussed how SIEM tools protect an organization's assets. In this section, we’ll introduce another important security tool: the playbook.
 
@@ -39,13 +39,13 @@ Incident response playbooks follow a six-phase process:
 
 ### Additional Resources
 
-- **United Kingdom**: National Cyber Security Center (NCSC) - Incident Management
-- **Australia**: Cyber Incident Response Plan
-- **Japan**: JPCERT/CC - Vulnerability Handling Guidelines
-- **Canada**: Ransomware Playbook
-- **Scotland**: Playbook Templates
+- **United Kingdom**: [National Cyber Security Center (NCSC) - Incident Management](https://www.ncsc.gov.uk/section/about-ncsc/incident-management)
+- **Australia**: [Cyber Incident Response Plan](https://www.cyber.gov.au/sites/default/files/2023-03/ACSC%20Cyber%20Incident%20Response%20Plan%20Guidance_A4.pdf)
+- **Japan**: [JPCERT/CC - Vulnerability Handling Guidelines](https://www.jpcert.or.jp/english/vh/guidelines.html)
+- **Canada**: [Ransomware Playbook](https://cyber.gc.ca/en/guidance/ransomware-playbook-itsm00099)
+- **Scotland**: [Playbook Templates](https://www.gov.scot/publications/cyber-resilience-incident-management/)
 
-## Incident Response
+## **Incident Response**
 
 ### Playbooks and SIEM Tools
 
@@ -65,7 +65,7 @@ When a SIEM tool generates an alert, such as a potential malware attack, the pla
 Playbooks are also used with SOAR tools, which automate tasks triggered by SIEM or MDR tools. For example, a SOAR tool might block a user account after multiple failed login attempts, and the analyst then uses a playbook to resolve the issue.
 
 
-## Key Takeaways
+## **Key Takeaways**
 
 - Playbooks provide detailed, consistent actions for security teams to follow during incidents.
 - Playbooks are living documents that are updated based on new threats and incidents.
