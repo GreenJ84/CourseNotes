@@ -22,12 +22,12 @@ Now, you must analyze the captured packet data and determine the impact of this 
 
 ### Step 1: Access the Template
 
-- Copy the **[Cybersecurity Incident Report Template](./Cybersecurity-incident-report-network-traffic-analysis.docx)**.
+- Copy the **[Cybersecurity Incident Report Template](./Incident-report-template.docx)**.
 - Use the prompts in the template to guide your analysis and report.
 
 ### Step 2: Access Supporting Materials
 
-- Review the **[Example of a Cybersecurity Incident Report](./Cybersecurity-Incident-Report.docx)** to understand how to document your findings effectively.
+- **[Example of a Cybersecurity Incident Report](./Incident-report-example.docx)** to understand how to document your findings effectively.
 
 ### Step 3: Provide a Summary of the Problem Found in the tcpdump Log
 
