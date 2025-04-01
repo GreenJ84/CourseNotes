@@ -1,7 +1,5 @@
 # **The Linux Operating System**
 
-## **Overview**
-
 This module introduces the **Linux operating system** - a powerful and widely used operating system - and its role in cybersecurity. You will learn about:
 
 1. **Linux Architecture** – Understanding its core components.
@@ -17,61 +15,61 @@ This module introduces the **Linux operating system** - a powerful and widely us
 
 ## **Introduction to Linux**
 
-### **What is Linux?**
+### What is Linux?
 
 Linux is the most widely used **operating system in cybersecurity**. It is an **open-source OS**, meaning anyone can access, modify, and share its source code.
 
-#### **The History of Linux**
+#### The History of Linux
 
 - **Linus Torvalds** created the **Linux kernel** in the early 1990s as an improvement on UNIX.
 - **Richard Stallman** developed **GNU**, an open-source OS also based on UNIX.
 - Combining **Torvalds’ kernel** with **GNU’s software** led to what we now call **Linux**.
 
-#### **Why is Linux Unique?**
+#### Why is Linux Unique?
 
 - **Open-source**: Licensed under the **GNU Public License**, allowing modification and distribution.
 - **Community-driven**: Developers worldwide contribute to its improvement.
 - **Multiple distributions**: Over **600 Linux distributions** exist, each tailored for different needs.
 
-### **Linux in Cybersecurity**
+### Linux in Cybersecurity
 
 - **Log analysis**: Security analysts use Linux to review system logs for errors or threats.
 - **Identity & access management**: Linux helps verify user access and authorization.
 - **Specialized distributions**: Some Linux versions are built for **digital forensics** and **penetration testing**.
 
-### **Linux Architecture**
+### Linux Architecture
 
 Linux is composed of several key components:
 
-#### **1. User**
+#### 1. User
 
 The **user** initiates and manages tasks. **Linux is a multi-user system**, meaning multiple users can access resources simultaneously.
 
-#### **2. Applications**
+#### 2. Applications
 
 Applications perform specific tasks (e.g., word processors, web browsers).
 
 - Linux applications are managed through **package managers**, which help install, update, and remove software.
 
-#### **3. Shell**
+#### 3. Shell
 
 The **shell** is a **command-line interpreter (CLI)** that processes and executes commands.
 
 - It serves as a translator between the **user** and the **kernel**.
 
-#### **4. Filesystem Hierarchy Standard (FHS)**
+#### 4. Filesystem Hierarchy Standard (FHS)
 
 The **FHS** organizes data in a structured format, similar to a filing cabinet.
 
 - It defines how files, directories, and system data are stored.
 
-#### **5. Kernel**
+#### 5. Kernel
 
 The **kernel** manages processes and memory, communicating with hardware to execute commands.
 
 - It ensures **efficient resource allocation** and system stability.
 
-#### **6. Hardware**
+#### 6. Hardware
 
 Hardware refers to the **physical components** of a computer, divided into:
 
@@ -80,7 +78,7 @@ Hardware refers to the **physical components** of a computer, divided into:
 
 ## **Linux Distributions**
 
-### **What are Linux Distributions?**
+### What are Linux Distributions?
 
 Linux is highly customizable, and different **versions** of Linux, called **distributions (distros)**, exist for different needs. Each distribution includes:
 
@@ -91,11 +89,11 @@ Linux is highly customizable, and different **versions** of Linux, called **dist
 
 Understanding the **distribution** you're using is essential, as different distros offer unique tools and applications.
 
-#### **Linux Distributions Analogy**
+#### Linux Distributions Analogy
 
 Think of Linux as a **vehicle**, with the **kernel as the engine**. Different manufacturers create **various types of vehicles** (trucks, buses, cars) from the same engine. Similarly, different **Linux distributions** are built on the Linux kernel and customized for different purposes.
 
-#### **Parent and Derived Distributions**
+#### Parent and Derived Distributions
 
 Most Linux distros are derived from a **parent distribution**:
 
@@ -103,9 +101,9 @@ Most Linux distros are derived from a **parent distribution**:
 - **Red Hat** → **CentOS, AlmaLinux**
 - **Slackware** → **SUSE**
 
-### **Common Linux Distributions in Security**
+### Common Linux Distributions in Security
 
-#### **Kali Linux**
+#### Kali Linux
 
 - **Debian-based**, designed for **penetration testing** and **digital forensics**.
 - Includes **pre-installed security tools** such as:
@@ -117,50 +115,50 @@ Most Linux distros are derived from a **parent distribution**:
   - **Autopsy** – Forensic analysis of hard drives and mobile devices.
 - Best used in a **virtual machine (VM)** to prevent unintended system modifications.
 
-#### **Ubuntu**
+#### Ubuntu
 
 - **User-friendly**, with both a **GUI and CLI**.
 - Includes **pre-installed applications** and supports additional **security tools**.
 - Popular in **cloud computing** and widely used in enterprises.
 
-#### **Parrot OS**
+#### Parrot OS
 
 - **Debian-based** like Kali Linux.
 - Includes **penetration testing** and **digital forensics** tools.
 - Offers a **user-friendly GUI** alongside a **CLI**.
 
-#### **Red Hat Enterprise Linux (RHEL)**
+#### Red Hat Enterprise Linux (RHEL)
 
 - **Subscription-based, enterprise-focused** distribution.
 - Not free but includes **dedicated customer support**.
 
-#### **AlmaLinux**
+#### AlmaLinux
 
 - Created as a **stable replacement for CentOS**.
 - Designed to be **binary-compatible with RHEL**, ensuring seamless migration.
 
-### **Package Managers for Linux Distributions**
+### Package Managers for Linux Distributions
 
-#### **What is a Package Manager?**
+#### What is a Package Manager?
 
 A **package** is software that includes **dependencies** needed for installation. A **package manager**:
 
 - Installs, updates, and removes software.
 - Resolves dependency issues.
 
-#### **Types of Package Managers**
+#### Types of Package Managers
 
 - **Debian-based distros (Ubuntu, Kali, Parrot)** → Use **dpkg** and **APT (Advanced Package Tool)**.
 - **Red Hat-based distros (RHEL, AlmaLinux)** → Use **RPM (Red Hat Package Manager)** and **YUM (Yellowdog Updater Modified)**.
 
-#### **Key Differences**
+#### Key Differences
 
 - **Debian packages** use `.deb` files (e.g., `Package_Version-Release_Architecture.deb`).
 - **Red Hat packages** use `.rpm` files (e.g., `Package-Version-Release_Architecture.rpm`).
 
 ## **The Shell**
 
-### **What is the Shell?**
+### What is the Shell?
 
 The **shell** is the **command-line interpreter** of the Linux operating system. It allows users to:
 
@@ -170,7 +168,7 @@ The **shell** is the **command-line interpreter** of the Linux operating system.
 
 The shell acts as a **translator** between the user and the system, enabling command execution without directly interacting with **binary code**.
 
-### **Types of Shells**
+### Types of Shells
 
 Linux supports multiple **shells**, each with unique features:
 
@@ -180,17 +178,17 @@ Linux supports multiple **shells**, each with unique features:
 - **Enhanced C Shell (tcsh)** – Improved version of C Shell.
 - **Z Shell (zsh)** – Offers advanced features like auto-completion.
 
-#### **Bash: The Default Shell**
+#### Bash: The Default Shell
 
 - **User-friendly** and supports scripting.
 - **Default shell** in most Linux distributions.
 - **Commonly used** by cybersecurity professionals.
 
-### **Communicating with the Shell**
+### Communicating with the Shell
 
 The shell processes **commands** and handles three types of interactions:
 
-#### **1. Standard Input (stdin)**
+#### 1. Standard Input (stdin)
 
 - Input **received from the user** via the command line.
 - Example:
@@ -200,7 +198,7 @@ The shell processes **commands** and handles three types of interactions:
   echo "Hello, world!"
   ```
 
-#### **2. Standard Output (stdout)**
+#### 2. Standard Output (stdout)
 
 - Response **received from the OS** output to the shell.
 - Example:
@@ -212,7 +210,7 @@ The shell processes **commands** and handles three types of interactions:
   Hello, world!
   ```
 
-#### **3. Standard Error (stderr)**
+#### 3. Standard Error (stderr)
 
 - Error messages **received from the OS** when a command fails output to the shell.
 - Example:
