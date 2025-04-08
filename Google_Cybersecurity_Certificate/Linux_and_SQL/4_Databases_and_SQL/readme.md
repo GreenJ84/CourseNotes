@@ -1,7 +1,5 @@
 # **Databases and SQL**
 
-## **Overview**
-
 In this module, you'll practice using SQL to interact with databases. You'll learn to query databases, filter results, and join tables to extract meaningful information. SQL is a powerful tool that enables security analysts to quickly analyze large datasets and derive actionable insights.
 
 ## **Learning Objectives**
@@ -47,11 +45,14 @@ By the end of this module, you will be able to:
 - **Purpose:**
   - **Linux Filtering:** Manages files and directories on a system.
   - **SQL Filtering:** Manipulates and retrieves structured data stored in databases.
+
 - **Syntax and Structure:**
   - **Linux:** Uses various commands (e.g., find, grep) with less structured output.
   - **SQL:** Uses standardized clauses (e.g., SELECT, WHERE, JOIN) for organized, columnar results.
+
 - **Joining Tables:**
   SQL allows joining multiple tables to aggregate related data, a capability not available in Linux filtering.
+
 - **Best Uses:**
   - Use SQL for structured data within databases.
   - Use Linux filtering for data in unstructured text files.
@@ -120,7 +121,7 @@ Execute basic SQL queries to retrieve specific data from a database.
 
 
 
-## **String SQL Query Filtering**
+## **SQL String Filtering**
 
 - **What is Filtering?**
   Filtering selects data that match a specified condition, narrowing down results.
@@ -169,7 +170,7 @@ Execute basic SQL queries to retrieve specific data from a database.
   WHERE country LIKE 'US%';
   ```
 
-### Wildcards in SQL
+#### Wildcards in SQL
 
 - **Common Wildcards:**
   - **% (percent sign):** Matches any sequence of characters.
@@ -249,7 +250,7 @@ Example: Finding employees hired between January 1, 2002, and January 1, 2003:
 
 In real-world cybersecurity scenarios, vulnerabilities often depend on multiple factors. For instance, a security vulnerability might be linked to machines running a specific email client on a particular operating system. To identify affected machines, we must filter for both conditions simultaneously.
 
-### **Logical Operators in SQL**
+### Logical Operators in SQL
 
 SQL provides three logical operators to refine queries:
 
@@ -259,7 +260,7 @@ SQL provides three logical operators to refine queries:
 
 ---
 
-### **Using the AND Operator**
+### Using the AND Operator
 
 The **AND** operator is used when all conditions must be true. For example, if we need to find machines running both **OS 1** and **Email Client 1**, we use:
 
@@ -271,7 +272,7 @@ The **AND** operator is used when all conditions must be true. For example, if w
 
 This ensures only machines that meet **both** conditions appear in the results.
 
-#### **Example: Security Alerts by Country and Representative**
+#### Example: Security Alerts by Country anRepresentative**
 
 To find customers affected by a cybersecurity issue that is handled by support representative ID 5 and located in the USA:
 
@@ -285,7 +286,7 @@ Both conditions must be satisfied for a record to be included.
 
 ---
 
-### **Using the OR Operator**
+### Using the OR Operator
 
 The **OR** operator is used when at least one of multiple conditions should be true.
 For example, if machines running **OS 1** or **OS 3** need a patch:
@@ -298,7 +299,7 @@ For example, if machines running **OS 1** or **OS 3** need a patch:
 
 This query selects all machines that match **either** OS version.
 
-#### **Example: Security Updates for Customers in North America**
+#### Example: Security Updates for Customers in North America**
 
 If a security update affects customers in **Canada** or the **USA**, use:
 
@@ -312,7 +313,7 @@ Even if both conditions use the same column, they must be explicitly stated.
 
 ---
 
-### **Using the NOT Operator**
+### Using the NOT Operator
 
 The **NOT** operator excludes records that match a specific condition.
 For example, to find all machines **except** those running **OS 3**:
@@ -325,7 +326,7 @@ For example, to find all machines **except** those running **OS 3**:
 
 This query returns all machines **except** those with OS 3.
 
-#### **Example: Excluding USA Customers from a Query**
+#### Example: Excluding USA Customers from Query**
 
 If a cybersecurity issue affects all countries **except** the USA:
 
@@ -337,7 +338,7 @@ If a cybersecurity issue affects all countries **except** the USA:
 
 This is more efficient than listing every country individually.
 
-#### **Alternative Syntax for NOT**
+#### Alternative Syntax for NOT
 
 The same query can be written using `<>` or `!=`:
 
@@ -348,7 +349,7 @@ The same query can be written using `<>` or `!=`:
 
 ---
 
-### **Combining Logical Operators**
+### Combining Logical Operators
 
 Logical operators can be **combined** for complex filters.
 For example, to find customers **outside** both Canada and the USA:
@@ -369,7 +370,7 @@ These advanced filtering techniques help security analysts refine queries, ident
 SQL joins allow analysts to combine data from multiple tables based on a common column. This is useful when dealing with related information, such as linking security vulnerabilities to machines in an organization.
 
 
-### **Understanding Join Syntax**
+### Understanding Join Syntax
 
 When working with multiple tables, SQL needs a way to differentiate between columns with the same name. To do this, **prefix the column with the table name**, separated by a period (`.`):
 
@@ -382,7 +383,7 @@ This ensures that SQL correctly identifies which table the column belongs to.
 
 ---
 
-### **INNER JOIN: Matching Records Between Tables**
+### INNER JOIN: Matching Records Between Tables
 
 The **INNER JOIN** returns only rows where a match exists in both tables. For example, to find employees and the machines they use:
 
@@ -394,7 +395,7 @@ INNER JOIN machines ON employees.device_id = machines.device_id;
 
 This retrieves records where `device_id` appears in both tables.
 
-#### **Selecting Specific Columns in INNER JOIN**
+#### Selecting Specific Columns in INNER JOIN
 
 Instead of selecting all columns, we can refine the query:
 
@@ -412,11 +413,11 @@ Here, `username` and `operating_system` are unique to their respective tables, b
 
 ---
 
-### **Outer Joins: Expanding Query Results**
+### Outer Joins: Expanding Query Results
 
 Outer joins allow records to be included **even if they don’t have a match** in the other table. There are three types:
 
-#### **LEFT JOIN: Include All Records from the Left Table**
+#### LEFT JOIN: Include All Records from the LefTable**
 
 A **LEFT JOIN** retrieves all rows from the first (left) table, with matching data from the second (right) table. If there’s no match, `NULL` is returned.
 
@@ -430,7 +431,7 @@ This ensures all employees are included, even those without assigned machines.
 
 ---
 
-#### **RIGHT JOIN: Include All Records from the Right Table**
+#### RIGHT JOIN: Include All Records from thRight Table**
 
 A **RIGHT JOIN** retrieves all rows from the second (right) table, with matching data from the first (left) table. If there’s no match, `NULL` is returned.
 
@@ -452,7 +453,7 @@ LEFT JOIN employees ON employees.device_id = machines.device_id;
 
 ---
 
-#### **FULL OUTER JOIN: Include All Records from Both Tables**
+#### FULL OUTER JOIN: Include All Records froBoth Tables**
 
 A **FULL OUTER JOIN** retrieves all rows from **both** tables, inserting `NULL` where matches are absent.
 
@@ -466,7 +467,7 @@ This is useful when analyzing all entities, regardless of whether they have a ma
 
 ---
 
-#### **Handling NULL Values in Joins**
+#### Handling NULL Values in Joins
 
 `NULL` represents missing data. In outer joins, `NULL` values appear when a record from one table **does not** have a match in the other.
 
@@ -476,7 +477,7 @@ You've already learned how to filter data and join tables in SQL. However, SQL o
 
 ---
 
-### **Aggregate Functions**
+### Aggregate Functions
 
 Aggregate functions operate on multiple data points and return a single calculated value rather than individual rows. Some commonly used aggregate functions include:
 
@@ -484,7 +485,7 @@ Aggregate functions operate on multiple data points and return a single calculat
 - **AVG**: Returns the average value of a numerical column.
 - **SUM**: Returns the sum of all values in a numerical column.
 
-#### **Using Aggregate Functions**
+#### Using Aggregate Functions
 
 To use an aggregate function, place its keyword after `SELECT`, followed by the column to calculate within parentheses.
 
@@ -511,7 +512,7 @@ This filters the query to count only the rows where `country = 'USA'`.
 
 ---
 
-### **Continuing to Learn SQL**
+### Continuing to Learn SQL
 
 SQL is a widely used language with many advanced features. To deepen your SQL knowledge:
 
