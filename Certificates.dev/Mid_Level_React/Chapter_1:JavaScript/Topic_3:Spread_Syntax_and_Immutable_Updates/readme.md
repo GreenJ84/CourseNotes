@@ -12,6 +12,19 @@ Spread syntax (`...`) allows iterable or enumerable values to be expanded into i
 
 ---
 
+## **Reading Resources**
+
+* [MDN Web Docs: Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+  Authoritative reference for the spread operator in arrays, objects, and other iterables. Covers syntax variations, shallow-copy semantics, order/override behavior when merging objects, examples, and compatibility notes.
+
+* [JavaScript.info: Rest parameters and spread syntax](https://javascript.info/rest-parameters-spread)
+  Tutorial-style walkthrough that contrasts rest vs. spread, shows common patterns (copying, merging, forwarding args/props), and explains practical immutability patterns with clear examples.
+
+> Suggested order: start with the JavaScript.info chapter for conceptual explanations and examples, then use the MDN page as a precise API reference.
+> For React-specific guidance on state updates, closures, and hooks, consult the React docs or focused articles on immutable updates and closure pitfalls.
+
+---
+
 ## **Core Syntax Overview**
 
 * Spread (`...value`) expands an iterable (arrays, strings, sets, maps) or enumerables (plain objects) into separate elements.

@@ -12,6 +12,19 @@ JavaScript’s module system enables code organization, reusability, encapsulati
 
 ---
 
+## **Reading Resources**
+
+* [MDN Web Docs: Export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
+  * Concise reference for syntax, examples, and browser compatibility (useful as a quick lookup).
+
+* [JavaScript.info: Export and Import](https://javascript.info/import-export)
+  * Tutorial‑style walkthrough with practical examples, common pitfalls, and progressive explanations.
+
+> Suggested order: read the JavaScript.info tutorial first for concepts and examples, then keep the MDN page as a reference.
+> If you need deeper compatibility details, consult bundler docs (Webpack/Vite) or the Node ESM docs next.
+
+---
+
 ## **ES Modules — Named, Default, and Namespace Exports**
 
 * **Named exports:** Export multiple bindings from a module. Must be imported using matching names.

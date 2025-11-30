@@ -12,6 +12,19 @@ Understanding JavaScript’s variable scoping model is essential for writing pre
 
 ---
 
+## **Reading Resources**
+
+* [MDN Web Docs: let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
+  Concise reference for `let` syntax, scoping rules, the temporal dead zone (TDZ), redeclaration behavior, and browser compatibility — use this as a quick lookup.
+
+* [JavaScript.info: Variables](https://javascript.info/variables)
+  Tutorial-style coverage of `var`/`let`/`const`, hoisting, TDZ, block vs. function scope, and practical examples to build intuition.
+
+> Suggested order: read the JavaScript.info chapter first for concepts and examples, then use the MDN `let` page as a precise reference.
+> For React-specific closure/state patterns, consult the React docs and articles on hooks/closure pitfalls as needed.
+
+---
+
 ## **Modern Variable Declarations**
 
 * **`let`** – block-scoped, mutable binding
