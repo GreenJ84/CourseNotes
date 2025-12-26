@@ -16,27 +16,27 @@ This section establishes the foundation of Rust programming by introducing the l
 
 ## **Lessons**
 
-### Lesson 1: Up and Running
+### Lesson 1.1: Up and Running
 
 A concise introduction to configuring the Rust toolchain, creating and running a Cargo project, and compiling simple programs. Covers the structure of a basic "Hello World" app and the practical use of variables, mutability, shadowing, primitive/compound types, functions, control flow, and commenting for clarity.
 
-### Lesson 2: Rust Memory Safety
+### Lesson 1.2: Rust Memory Safety
 
 A focused overview of Rust’s memory-safety philosophy, comparing RAII-style resource management with Rust’s ownership and borrowing model. Explains ownership fundamentals, references and borrowing rules, basic lifetimes, the distinction between stack/heap data, common string types, and using slices for zero-copy views.
 
-### Lesson 3: Custom Data Types
+### Lesson 1.3: Custom Data Types
 
 Introduces data modeling with structs, tuple structs, and enums, plus how to attach behavior via impl blocks and associated functions. Demonstrates exhaustive pattern matching and idiomatic use of core enums like Option and Result, along with collections (vectors) for dynamic data and design considerations for safe, expressive types.
 
-### Lesson 4: Rust Project Structure
+### Lesson 1.4: Rust Project Structure
 
 Summarizes crate and module organization, the mod system and file layout, and how Cargo.toml governs dependencies and build metadata. Describes best practices for organizing source trees, using external crates, and the basic workflow for publishing a crate to a registry.
 
-### Lesson 5: Structuring Larger Projects
+### Lesson 1.5: Structuring Larger Projects
 
 Explains strategies for scaling beyond single-crate projects: Cargo features for conditional compilation and API surface control, and workspaces for coordinating multiple crates. Covers common patterns for dependency boundaries, release/versioning considerations, and maintaining coherent development across crates.
 
-### Lesson 6: Testing and Documentation
+### Lesson 1.6: Testing and Documentation
 
 Outlines testing at multiple levels—unit tests, integration tests, and test organization—plus practices for writing reliable, maintainable tests. Details documentation comments, generating docs with cargo doc, embedding examples, and basic benchmarking approaches to measure performance and guide optimization.
 
@@ -51,7 +51,7 @@ The concepts in this section form the practical baseline for all Rust developmen
 ## **Key Takeaways**
 
 | Concept Area | Summary |
-|--------------|---------|
+| -------------- | --------- |
 | Syntax & Tooling | Installation, compiler basics, project creation, and fundamental Rust syntax. |
 | Memory Safety | Ownership, borrowing, and slices ensure safe memory access without a garbage collector. |
 | Data Modeling | Structs, enums, vectors, and pattern matching provide expressive modeling tools. |
