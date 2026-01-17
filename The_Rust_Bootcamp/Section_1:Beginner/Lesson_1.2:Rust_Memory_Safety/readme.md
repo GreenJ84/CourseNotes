@@ -17,14 +17,14 @@ Rust’s memory model is explored both conceptually and practically, connecting 
 
 ## **Topics**
 
-### Topic 1: Rust-Based Computer Science
+### Topic 1.2.1: Rust-Based Computer Science
 
 - Stack vs heap memory allocation
 - Deterministic resource management
 - Compile-time enforcement vs runtime checks
 - Safety guarantees without garbage collection
 
-### Topic 2: Ownership
+### Topic 1.2.2: Ownership
 
 - Ownership rules and invariants
 - Move semantics and value transfer
@@ -35,7 +35,7 @@ Rust’s memory model is explored both conceptually and practically, connecting 
 - Ownership and assignment semantics
 - Drop order and deterministic destruction
 
-### Topic 3: Borrowing
+### Topic 1.2.3: Borrowing
 
 - Immutable and mutable references
 - Borrowing rules and aliasing prevention
@@ -43,14 +43,14 @@ Rust’s memory model is explored both conceptually and practically, connecting 
 - Compiler-enforced safety guarantees
 
 
-### Topic 4: Strings in Rust
+### Topic 1.2.4: Strings in Rust
 
 - `String` vs `&str`
 - Heap allocation and ownership
 - UTF-8 encoding considerations
 - Passing strings safely across APIs
 
-### Topic 5: Slices
+### Topic 1.2.5: Slices
 
 - Slice types as borrowed views
 - Array and string slicing

@@ -16,56 +16,56 @@ This lesson introduces the foundational mechanics of working with Rust, covering
 
 ## **Topics**
 
-### Topic 1: Setup
+### Topic 1.1.1: Setup
 
 - Rust toolchain components (`rustc`, `cargo`, `rustup`)
 - Stable vs nightly channels and update management
 - Creating and running projects with Cargo
 - Build artifacts, compilation targets, and profiles
 
-### Topic 2: Hello World
+### Topic 1.1.2: Hello World
 
 - Minimal Rust program structure
 - The `main` function as the program entry point
 - Compilation vs execution
 - Standard output using macros
 
-### Topic 3: Variables
+### Topic 1.1.3: Variables
 
 - Immutable-by-default variable bindings
 - Mutability with `mut`
 - Shadowing vs reassignment
 - Scope-based lifetime of variables
 
-### Topic 4: Data Types
+### Topic 1.1.4: Data Types
 
 - Scalar types (integers, floats, booleans, characters)
 - Compound types (tuples, arrays)
 - Type inference and explicit annotations
 - Compile-time type checking
 
-### Topic 5: Constants and Statics
+### Topic 1.1.5: Constants and Statics
 
 - `const` values and compile-time evaluation
 - `static` variables and global data
 - Immutability guarantees and memory placement
 - Use cases and restrictions
 
-### Topic 6: Functions
+### Topic 1.1.6: Functions
 
 - Function definitions and signatures
 - Parameters and return values
 - Expression-based returns
 - Function scope and visibility basics
 
-### Topic 7: Control Flow
+### Topic 1.1.7: Control Flow
 
 - Conditional execution with `if` expressions
 - Looping constructs (`loop`, `while`, `for`)
 - Pattern-based iteration
 - Control flow as expressions
 
-### Topic 8: Comments
+### Topic 1.1.8: Comments
 
 - Line comments and documentation comments
 - Code readability and intent

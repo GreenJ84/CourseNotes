@@ -16,48 +16,48 @@ This lesson introduces Rust’s core data modeling constructs used to represent 
 
 ## **Topics**
 
-### Topic 1: Structs
+### Topic 1.3.1: Structs
 
 - Defining named-field data structures
 - Ownership and borrowing of struct fields
 - Mutability rules at the struct and field level
 - Struct update syntax and field init shorthand
 
-### Topic 2: Implementation Blocks
+### Topic 1.3.2: Implementation Blocks
 
 - Associating methods with types using `impl`
 - `self`, `&self`, and `&mut self` semantics
 - Associated functions vs instance methods
 - Constructor patterns and encapsulation
 
-### Topic 3: Tuple Structs
+### Topic 1.3.3: Tuple Structs
 
 - Structs with unnamed fields
 - Use cases for lightweight, type-safe wrappers
 - Distinguishing tuple structs from tuples
 
-### Topic 4: Enums
+### Topic 1.3.4: Enums
 
 - Defining variants with and without associated data
 - Memory layout and discriminants
 - Exhaustive pattern matching with `match`
 - Enums as algebraic data types
 
-### Topic 5: Option
+### Topic 1.3.5: Option
 
 - Representing nullable values without `null`
 - `Some` and `None` semantics
 - Pattern matching and combinator methods
 - Preventing invalid states through type design
 
-### Topic 6: Result
+### Topic 1.3.6: Result
 
 - Modeling recoverable errors explicitly
 - `Ok` and `Err` variants
 - Error propagation fundamentals
 - Integrating results into control flow
 
-### Topic 7: Vectors
+### Topic 1.3.7: Vectors
 
 - Heap-allocated, growable collections
 - Ownership and borrowing rules for elements
