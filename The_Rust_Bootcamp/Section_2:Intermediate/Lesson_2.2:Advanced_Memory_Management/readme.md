@@ -64,7 +64,14 @@ This lesson expands Rust’s ownership model beyond foundational borrowing rules
 - Blocking behavior and contention
 - Safe interior mutability in concurrent contexts
 
-### Topic 2.2.8: Deref Coercion
+### Topic 2.2.8: `RwLock<T>` Smart Pointer
+
+- Concurrent read access with exclusive write access
+- Read vs write lock semantics and blocking behavior
+- Performance tradeoffs vs `Mutex<T>`
+- Poisoning and recovery patterns
+
+### Topic 2.2.9: Deref Coercion
 
 - The `Deref` and `DerefMut` traits
 - Automatic reference conversions in method calls
