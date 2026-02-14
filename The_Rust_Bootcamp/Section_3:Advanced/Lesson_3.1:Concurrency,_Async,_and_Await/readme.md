@@ -19,69 +19,62 @@ This lesson develops a rigorous understanding of Rust’s concurrency model and 
 
 - Concurrency vs. parallelism
 - Programs, processes, and threads fundamentals
-- Process isolation and inter-process communication
-- Memory model: shared heap vs. separate stacks
-- Context switching mechanics and overhead
-- OS scheduling strategies (preemptive, cooperative)
-- CPU cores and the limits of true parallelism
-- Data races and memory safety
+- Memory model: shared heap vs separate stacks
+- Context switching and OS scheduling
+- CPU cores and true parallelism
 
-### Topic 3.1.2: Rust Concurrency
+### Topic 3.1.2: Rust Concurrency Features
 
-- Ownership and borrowing rules in concurrent contexts
-- Marker traits: what they are and why they exist
-- `Send` trait: safe ownership transfer across threads
-- `Sync` trait: safe shared reference access across threads
-- The relationship between `Sync` and `Send` (`T: Sync` ⟺ `&T: Send`)
-- Unsafe implementations and responsibilities
-- Shared-state concurrency philosophy
-- Message-passing concurrency philosophy
-- Concurrency models overview
-
+- Ownership and borrowing in concurrent contexts
+- Moving ownership using `move` closures
+- Stack references and thread boundaries
+- `Send` and `Sync` marker traits for compile-time thread safety
+- Interior mutability and thread safety
+- Concurrency models overview and selection criteria
+- Shared-state vs. message-passing philosophies
+- Model selection based on workload characteristics
+- Data races and memory safety guarantees
 
 ### Topic 3.1.3: Threads
 
 - Creating threads with `std::thread::spawn`
-- Thread builder for advanced configuration
-- Moving ownership into threads using `move` closures
+- Thread fundamentals: memory model and stack isolation
+- Context switching cost and scheduling overhead
 - Closure capture semantics and multi-capture patterns
 - Thread joining and lifecycle management
-- `JoinHandle<T>` and error handling
-- Parking and unparking threads
-- Shared memory patterns
-- Message-passing patterns
-- Advanced threading practices
+- Atomic types and lock-free primitives
+- Deadlocks: detection and avoidance strategies
 
 ### Topic 3.1.4: Async & Await
 
-- Why async?
+- Why async? I/O-bound vs CPU-bound workloads
 - The `Future` trait and polling mechanism
-- What `async` returns
 - Async functions as state machines
-- The `.await` syntax and yielding control
-- Composing futures (sequential, concurrent, racing)
-- Timeout and cancellation patterns with `select!`
-- Executors and runtimes
-- Tokio introduction and runtime configuration
-- Spawning async tasks with `tokio::spawn`
-- Task lifecycle and `JoinHandle`
-- Async pitfalls: blocking the runtime
+- The `.await` syntax and control flow
+- Executors and runtimes overview
+- Comparing Rust futures to JavaScript promises
+- Laziness vs eagerness
 
-### Topic 3.1.5: Advanced Concurrency
+### Topic 3.1.5: Tokio
 
-- Tokio tasks vs OS threads
-- Bridging sync and async with `spawn_blocking`
-- Hybrid I/O and CPU-bound workloads
-- Streams: async iterators
-- Backpressure and flow control
-- Bounded channels and semaphores for rate limiting
-- Advanced patterns (fan-out/fan-in, work-stealing, `JoinSet`)
-- Atomic types and lock-free primitives
-- Memory ordering semantics
-- Interior mutability patterns in concurrent contexts
-- Deadlocks and avoidance strategies
-- Performance trade-offs between locking and message passing
-- Profiling and optimizing concurrent systems
+- Tokio as the dominant async runtime
+- Runtime flavors: current-thread vs multi-thread
+- Work-stealing scheduler architecture
+- Task spawning and lifecycle management
+- Task cancellation and abort semantics
+- Hierarchical timing wheels
+- Testing async code with `#[tokio::test]`
+- Runtime configuration and tuning
+
+### Topic 3.1.6: Advanced Concurrency
+
+- Stream trait and functional combinators
+- Stream buffering and concurrency limits
+- Backpressure and flow control strategies
+- CPU-intensive work in async contexts
+- Preventing executor starvation
+- Advanced coordination patterns
+- Production patterns and best practices
 
 ---
 
@@ -89,14 +82,22 @@ This lesson develops a rigorous understanding of Rust’s concurrency model and 
 
 Concurrency and async patterns are foundational to modern systems engineering:
 
+- **Concurrency fundamentals**: Understand the difference between concurrency and parallelism; recognize how ownership and borrowing prevent data races at compile time
+- **Rust concurrency features**: Leverage `Send` and `Sync` marker traits to design APIs that enforce thread safety; select appropriate concurrency models (shared-state vs message-passing, OS threads vs async, actors vs events) based on workload characteristics
+- **Thread-based concurrency**: Spawn and coordinate OS threads safely; use channels for message passing and Arc/Mutex for shared state; understand context switching overhead and thread pool patterns
+- **Async foundations**: Build scalable I/O-bound systems using futures and async/await; understand the polling model, state machine transformations, and cancellation semantics
+- **Tokio runtime**: Deploy production-grade async services with proper runtime configuration, work-stealing schedulers, and resource management; handle I/O multiplexing and time management
+- **Advanced patterns**: Implement resilient systems with streams, backpressure, circuit breakers, and retry logic; handle mixed I/O and CPU-bound workloads efficiently using spawn_blocking and hybrid patterns
+- **Performance optimization**: Profile concurrent systems to identify bottlenecks; choose appropriate abstractions (threads vs tasks, mutexes vs channels, blocking vs async) based on measured performance
 
-- Select appropriate concurrency models: Choosing between shared-state, message-passing, actor, or event-driven patterns based on workload characteristics
-- Leverage `Send` and `Sync` bounds to design APIs that enforce thread safety at compile time
-- Building multi-threaded services that utilize multi-core processors efficiently
-- Designing thread-safe libraries that prevent undefined behavior
-- Implementing scalable servers using asynchronous task execution
-- Developing low-latency systems with atomic and lock-free structures
-- Structuring high-throughput applications where coordination correctness is critical
+Real-world applications include:
+
+- High-concurrency web servers handling thousands of simultaneous connections
+- Real-time data processing pipelines with backpressure management
+- Distributed systems with fault tolerance and graceful degradation
+- Low-latency microservices with efficient resource utilization
+- Message brokers and event processing systems
+- Database connection pooling and query multiplexing
 
 Understanding Rust’s concurrency guarantees enables fearless concurrency—parallelism without undefined behavior or data races—while maintaining performance comparable to low-level languages.
 
@@ -106,17 +107,24 @@ Understanding Rust’s concurrency guarantees enables fearless concurrency—par
 
 | Area | Summary |
 | ---- | ------- |
-| **Foundations** | Concurrency is about structure; parallelism is about execution. Understanding the OS execution model (processes, threads, memory layout) is essential. |
-| **Type System Safety** | `Send` and `Sync` marker traits prevent data races at compile time. Rust's ownership system extends naturally to concurrent contexts. |
-| **Concurrency Paradigms** | Shared-state offers low latency but requires careful synchronization; message-passing offers safety through isolation but adds copying overhead. |
-| **Model Selection** | OS threads for CPU-bound work; async for I/O-bound work; actors for fault tolerance; events for reactive systems. Choose based on workload. |
-| **Thread Implementation** | Native OS threads are safe and predictable when ownership rules are followed. `Arc`, `Mutex`, and channels provide structured coordination. |
-| **Async Execution** | Futures enable scalable, cooperative concurrency beyond OS threads. Async complements rather than replaces thread-based concurrency. |
-| **Advanced Techniques** | Atomics, lock-free structures, and hybrid sync/async patterns unlock high-performance concurrent systems with measurable trade-offs. |
+| Safety Model | Rust prevents data races at compile time using ownership and trait constraints. |
+| Rust Features | `Send` and `Sync` marker traits enforce thread safety; concurrency models matched to workloads. |
+| Threads | Native OS threads are safe and predictable when ownership rules are followed. |
+| Async/Await | Futures and state machines provide zero-cost asynchronous abstractions. |
+| Tokio Runtime | Production-grade executor with work-stealing, I/O multiplexing, and rich ecosystem. |
+| Advanced Patterns | Streams, backpressure, circuit breakers, and resilience patterns for production systems. |
 
-- **Compile-time thread safety is Rust's superpower**: `Send`/`Sync` eliminate entire classes of data race bugs that plague C, C++, Java, and Go
-- **Concurrency model selection is architectural**: Wrong choice causes 10-100x performance degradation or unnecessary complexity
-- **Ownership transfer is the foundation**: Moving data between threads (`move` closures) is how Rust enforces safety without runtime overhead
-- **Shared-state vs. message-passing is a trade-off**: Low-latency direct access vs. safe isolated components—hybrid approaches often win
-- **Async is not a silver bullet**: CPU-bound work in async runtimes blocks other tasks; know when to use threads instead
-- **Abstractions must match guarantees**: Correct API design (trait bounds, lifetime constraints) prevents subtle concurrency bugs at the library boundary
+- Rust enforces thread safety through its type system (`Send` and `Sync` bounds)
+- Concurrency primitives must be chosen based on workload characteristics (CPU-bound vs I/O-bound)
+- `Send` and `Sync` marker traits provide compile-time guarantees preventing data races
+- Ownership transfer (`move`) is central to safe thread spawning; scoped threads allow borrowing
+- Concurrency model selection is critical: OS threads for CPU-bound, async for I/O-bound
+- OS threads provide true parallelism but have high overhead; async tasks are lightweight
+- Async execution complements, rather than replaces, thread-based concurrency
+- Tokio provides the runtime infrastructure for scalable async systems with work-stealing
+- Streams generalize futures for processing unbounded sequences with backpressure
+- Advanced patterns (circuit breakers, retries, load shedding) are essential for resilient services
+- Blocking operations in async contexts require `spawn_blocking` to avoid runtime starvation
+- Correct abstraction design prevents subtle concurrency bugs
+- Understanding the tradeoffs between shared-state and message-passing is critical
+- Performance optimization requires profiling and understanding executor behavior
