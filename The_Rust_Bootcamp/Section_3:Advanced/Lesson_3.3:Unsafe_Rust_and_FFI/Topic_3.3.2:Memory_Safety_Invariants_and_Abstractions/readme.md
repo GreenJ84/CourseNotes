@@ -83,7 +83,7 @@ let r: &i32;
 // println!("{}", r); // ❌ would be dangling if allowed
 ```
 
-> **Senior Insight:** Safe Rust prevents this statically. Unsafe abstractions must preserve this property manually.
+> **Senior insight**: Safe Rust prevents this statically. Unsafe abstractions must preserve this property manually.
 
 ---
 
@@ -101,7 +101,7 @@ A type is `Sync` if `&T` can be shared across threads safely.
 
 Equivalent intuition:
 
-- `T: Sync` if `&T: Send`
+- `T: Sync` iff `&T: Send`
 
 ```rust
 use std::thread;
@@ -294,7 +294,7 @@ The best unsafe code is usually invisible to consumers because the public API is
 - Unsafe Rust requires strict adherence to memory invariants
 - Violations lead to undefined behavior with no guarantees
 - `UnsafeCell` is central to controlled mutation through shared references
-- Thread-safety must be explicitly reasoned about in unsafe contexts;  at the type and ownership levels
+- Thread-safety must be explicitly reasoned about at the type and ownership levels
 - Proper abstraction design is the key to safe and maintainable systems
 - UB often comes from broken contracts, not obvious syntax errors
 - High-quality abstractions make unsafe power usable without exposing unsafe risk
