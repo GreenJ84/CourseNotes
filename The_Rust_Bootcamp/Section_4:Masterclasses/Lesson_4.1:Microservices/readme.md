@@ -6,7 +6,7 @@ This lesson explores the architecture and operational model of microservices, fo
 
 - Define microservices architecture and distinguish it from monolithic systems
 - Design service boundaries and understand domain decomposition principles
-- Implement service-to-service communication using REST and alternative protocols
+- Implement service-to-service communication using REST and gRPC
 - Containerize applications using Docker for consistent deployment environments
 - Orchestrate distributed services using Kubernetes for scalability and resilience
 - Build automated CI/CD pipelines using GitHub Actions
@@ -30,13 +30,18 @@ This lesson explores the architecture and operational model of microservices, fo
 - Common methods: `GET`, `POST`, `PUT`, `DELETE`
 - JSON as a standard data interchange format
 - Widely supported and simple to integrate
+- Alternatives
+  - gRPC for high-performance, strongly typed communication
+  - Message queues (e.g., event-driven systems using brokers)
+  - Publish/subscribe patterns for decoupled systems
 
-### Topic 4.1.3: Alternative Communication
+### Topic 4.1.3: Communication with gRPC
 
-- gRPC for high-performance, strongly typed communication
-- Message queues (e.g., event-driven systems using brokers)
-- Publish/subscribe patterns for decoupled systems
-- Trade-offs between latency, complexity, and coupling
+- Protocol Buffers for schema-first API contracts
+- Strongly typed client and server code generation
+- Efficient binary transport over HTTP/2
+- Streaming support (client, server, bidirectional)
+- Common fit: low-latency internal service-to-service communication
 
 ### Topic 4.1.4: Containerization with Docker
 
