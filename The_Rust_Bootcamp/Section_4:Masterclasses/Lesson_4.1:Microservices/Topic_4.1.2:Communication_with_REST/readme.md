@@ -2,7 +2,7 @@
 
 Representational State Transfer (REST) is an architectural style for designing networked applications using stateless, client-server communication over HTTP. It remains the default choice for web APIs and many microservice entry points because it is widely understood, tooling-friendly, and operationally predictable.
 
-At a senior engineering level, REST is not just about routes and JSON. It is about designing durable contracts under change:
+REST is not just about routes and JSON. It is about designing durable contracts under change:
 
 - Correct HTTP semantics (method meaning, status codes, caching)
 - Safe behavior under retries, timeouts, and partial failures
@@ -305,7 +305,7 @@ REST is one of several communication strategies in distributed systems.
 - Requires connection lifecycle management
 - Not a replacement for standard request/response APIs
 
-> Senior Rule of Thumb
+> Rule of Thumb
 >
 > - External/public APIs: REST first
 > - Internal low-latency synchronous calls: often gRPC
@@ -470,4 +470,4 @@ In Rust-based systems:
 - Proper use of HTTP semantics improves API clarity and reliability
 - Alternative communication models should be chosen based on system requirements
 - Rust enables building fast, safe, and maintainable REST services with minimal runtime overhead
-- Senior API design is mostly about consistency under retries, failures, and long-term evolution
+- Robust API design is mostly about consistency under retries, failures, and long-term evolution
