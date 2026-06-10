@@ -418,3 +418,14 @@ Model manipulation: Model poisoning and data poisoning attacks that compromise t
 Data exfiltration: Unauthorized extraction of models, training data, or interaction data
 Overreliance: The human behavioral risk of accepting AI output without verification
 For each attack type, you learned about layered mitigation strategies that combine technical controls, monitoring, and human oversight. AI security is a rapidly evolving field—new attack techniques and countermeasures continue to emerge. Staying current with frameworks like OWASP, MITRE ATLAS, and NIST AI RMF is essential for maintaining effective security controls.
+
+### Other resources
+
+To continue your learning journey, go to:
+
+[OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
+[MITRE ATLAS](https://atlas.mitre.org/)
+[NIST AI Risk Management Framework](https://www.nist.gov/artificial-intelligence/executive-order-safe-secure-and-trustworthy-artificial-intelligence)
+[AI shared responsibility model](https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility-ai)
+[Crescendo multi-turn jailbreak research](https://crescendo-the-multiturn-jailbreak.github.io/)
+[Overreliance on AI literature review (Microsoft Research)](https://www.microsoft.com/en-us/research/uploads/prod/2022/06/Aether-Overreliance-on-AI-Review-Final-6.21.22.pdf)
